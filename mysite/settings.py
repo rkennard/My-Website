@@ -126,6 +126,8 @@ STATIC_ROOT = '/home/rkennard/rkennard.pythonanywhere.com/static'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-# print("STATIC_ROOT:", STATIC_ROOT)
-# print("STATIC_URL", STATIC_URL)
-# print("STATICFILES_DIRS:", STATICFILES_DIRS)
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = Path(BASE_DIR / 'media')
+
