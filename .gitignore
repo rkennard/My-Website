@@ -32,4 +32,5 @@ $RECYCLE.BIN/
 *.code-workspace
 
 # Settings
-settings.py
+**/settings.py
+mysite/settings.py
