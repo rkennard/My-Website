@@ -1,3 +1,5 @@
+import os
+
 """
 Github auth token: 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
 Django settings for mysite project.
@@ -26,7 +28,7 @@ SECRET_KEY = 'django-insecure-zyb=4jykfq)icb6%cfooe^%fqkri&j&=c1_7k7*-j4yt7gfl+*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'rkennard.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'pythonanywhere.com', 'rkennard.pythonanywhere.com']
 
 
 # Application definition
@@ -118,9 +120,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATICFILES_DIRS = [BASE_DIR / 'static']
-# STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATIC_ROOT = '/home/rkennard/rkennard.pythonanywhere.com/static'
+STATIC_ROOT = Path(BASE_DIR / 'static')
+STATICFILES_DIRS = [BASE_DIR / 'blog' / 'static']
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
